@@ -1,0 +1,30 @@
+@import "../../../configs/config";
+.yubao{
+  width: 100%;
+  padding:0  @basePading;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  .yubao-left{
+    width: 33.3%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .yubao-right{
+   flex-grow: 1;
+   .yubao-list{
+     display: flex;
+     justify-content: space-between;
+     line-height: 30px;
+     color: #fff;
+     font-size: 14px;
+     border-bottom: 1px dashed #999;
+
+   }
+  }
+
+}

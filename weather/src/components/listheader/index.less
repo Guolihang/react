@@ -1,0 +1,15 @@
+@import "../../configs/config";
+.list-header{
+  height:@listHeaderHeight;
+  line-height: @listHeaderHeight;
+  background-color: @listHeaderBg;
+  display: flex;
+  justify-content: space-between;
+  padding:0 @basePading;
+  @fontColor:#5696E2;
+  @fontSize:20px;
+  div:nth-child(1),div:nth-child(3){
+    color:@fontColor;
+    font-size:@fontSize;
+  }
+}

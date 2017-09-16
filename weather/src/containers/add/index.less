@@ -1,0 +1,39 @@
+@addHeaderHeight:50px;
+@addHeaderFontSize:16px;
+@addHeaderBg:#EDEDED;
+@addHeaderFontColor:#5B9CD9;
+
+@import "../../configs/config";
+
+.add-header{
+  height:@addHeaderHeight;
+  font-size: @addHeaderFontSize;
+  color:@addHeaderFontColor;
+  background-color: @addHeaderBg;
+  position: relative;
+  padding:0  0 0 @basePading;
+  display: flex;
+
+  .search{
+    position: absolute;
+    height:100%;
+    line-height: @addHeaderHeight;
+    left:@basePading+10px;
+    font-size:20px;
+    color: #888;
+  }
+  input{
+    height:@addHeaderHeight - 16;
+    margin:16/2px 0;
+    padding-left:30px;
+    border:1px solid #aaa;
+    border-radius: 5px;
+    flex-grow: 1;
+  }
+  .add-btn{
+    height:100%;
+    width:60px;
+    line-height: @addHeaderHeight;
+    text-align: center;
+  }
+}
